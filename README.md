@@ -21,6 +21,11 @@ The scripts can be split into three groups based on function:
 #### config.py  
 Used to set Sentinel and Landsat credentials to access the Copernicus Data Space Ecosystem for downloading raster data in the form of SAFE files. You can also set download parameters for sentinel and landsat, and paths to input and output directories.
 
+There are two versions - config.py and config_gpkg.py.  
+config.py reads the fire search parameters from a shapefile, whereas config_gpkg.py reads them from individual gpkg files.  
+
+If you use config.py, then use dataset_generation.ipynb. If you use config_gpkg.py, then use dataset_generation_gpkg.ipynb  
+
 #### download_scenes.py  
 Downloads SAFE files containing raster data.
 
